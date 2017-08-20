@@ -1,0 +1,43 @@
+1 + 2 + ... + N ~ 1/2(N2)
+1 + 1/2 + 1/3 + ... + 1/N ~ lnN
+3-sum triple loop ~ 1/6(N3)
+
+Mathematical models for running time
+In principle, accurate mathematical model are available
+In practice, Formulas can be complicated; Advanced mathematics might be required; Exact models best left for experts
+Bottom line, we use approximate models
+
+Common order-of-growth classifications 
+
+order of growth         typical code framework
+1 (constant)            a = b + c, statement
+logN (logarithmic)      while (N > 1) {N = N / 2}, divide in half
+N (linear)              for (int i = 0; i < N; i++) {...}, loop 
+NlogN (linearithmic)    like merge sort, divide and conquer 
+N2 (quadratic)          double loop
+N3 (cubic)              triple loop
+2N (exponent)           exhaustive search
+
+
+Theory of algorithms
+
+Best case, lower bound on cost
+Worst case, Upper bound on cost
+Average case, "Excepted" cost
+
+Goals, Establish difficulty of a problem; Develop optimal algorithms
+Approach, Suppress details in analysis: analyze "to within a constant factor"
+          Eliminate variability in input model by focusing on the worst case 
+          
+
+          
+Memory
+
+Basic
+Bit 0 or 1; Byte 8 bits; Megabyte (MB) 1 million or 2 to the 20th bytes; Gigabyte (GB) 1 billion or 2 to the 30th bytes
+Modern machine, we assume 64-bit machine with 8 byte pointers (address more memory, pointers use more space)
+
+Typical memory usage for primitive types, arrays and objects
+boolean 1; byte 1; char 2; int 4; float 4; long 8; double 8
+char[] 2N + 24; int[] 4N + 24; double 8N + 24 
+object overhead 16bytes; reference 8bytes; padding each object use a multiple of 8 bytes

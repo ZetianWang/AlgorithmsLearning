@@ -1,0 +1,17 @@
+Stack: LIFO
+Queue: FIFO
+
+Stack
+Lined-list implementation:
+1. Every operation takes constant time in the worst case. 
+2. Uses extra time and space to deal with the links. 
+Resizing-array implementation:
+1. Every operation takes constant amortized time.
+2. Less wasted space.
+
+
+
+Iterators
+What is an Iterable? Has a method that return an Iterator.
+What is an Iterator? Has methods hasNext() and next().
+Why make data structure Iterable? Java support elegant client code. (we can use foreach statement)

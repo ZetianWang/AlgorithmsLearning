@@ -1,0 +1,18 @@
+Improvement 1: weighting
+Modify quick-union to avoid tall trees.
+Keep track of size of each tree (number of objects).
+Balance by linking  root of smaller tree to root of lager tree.
+
+Running time
+Find: takes time proportional to depth of p and q. lgN in worst case.
+Union: takes constant time, given roots. lgN in worst case.
+
+Proposition: Depth of any node x is at most lgN. 
+
+
+
+Improvement 2: path compression
+Just after computing the root of p, set the id of each examined node to point to that root.
+
+Two-pass implementation: add second loop in root() to set the id[] of each examined node to root.
+Simpler one-pass variant: Make every node in path point to its grandparent (thereby halving path length).
