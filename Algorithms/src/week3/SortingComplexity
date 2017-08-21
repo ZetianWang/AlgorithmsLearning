@@ -1,0 +1,14 @@
+Computational complexity. Framework to study efficiency of algorithms for solving a particular problem X
+
+Model of computation. Allowable operations, decision tree
+Cost model. Operation counts, # of compares 
+Upper bound. Cost guarantee provided by some algorithms for X, ~NlgN from mergesort
+Lower bound. Proven limit on cost guarantee of all algorithms for X, ?
+Optimal algorithm. Algorithm with best possible cost guarantess for X, ?
+
+Decision tree (for 3 distinct items a, b, c) 
+3 compares at most
+height of tree = worst case number of compares 
+
+Compare-based lower bound for sorting.
+Any compare-based sorting algorithm must use at least lg(N!) ~ NlgN compares in the worst-case 

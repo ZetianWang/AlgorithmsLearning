@@ -1,0 +1,8 @@
+Comparable interface: sort using a type's natural order 
+Comparator interface: sort using an alternate order 
+
+Stability
+A stable sort preserves the relative order of items with equal keys.
+
+Insertion sort and mergesort are stable (but not selection sort or shellsort)
+never move a equal element pass another one, not have long distance exchange  
